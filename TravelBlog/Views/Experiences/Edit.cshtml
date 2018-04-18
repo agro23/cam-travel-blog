@@ -10,19 +10,19 @@
 <h4>Edit this Experience :@Html.DisplayFor(model => model.Title)</h4>
 @using (Html.BeginForm())
 {
-    @Html.HiddenFor(model => model.ExperienceId)
+    @Html.HiddenFor(model => model.ExperienceId)<br />
 
-    @Html.LabelFor(model => model.Title)
-    @Html.EditorFor(model => model.Title)
+    @Html.LabelFor(model => model.Title)<br />
+    @Html.EditorFor(model => model.Title)<br />
 
-    @Html.LabelFor(model => model.Content)
-    @Html.EditorFor(model => model.Content)
+    @Html.LabelFor(model => model.Content)<br />
+    @Html.EditorFor(model => model.Content)<br />
 
-    @Html.LabelFor(model => model.LocationId)
-    @Html.DropDownList("LocationId")
+    @Html.LabelFor(model => model.LocationId)<br />
+    @Html.DropDownList("LocationId")<br />
 
-    @Html.LabelFor(model => model.PersonId)
-    @Html.DropDownList("PersonId")
+    @Html.LabelFor(model => model.People)<br />
+    @Html.DropDownList("People")<br />
 
 
 

@@ -14,7 +14,7 @@ namespace TravelBlog.Models
         public int LocationId { get; set; }
         public string Place { get; set; }
         public string Details { get; set; }
-        //public virtual ICollection<Experience> Experiences { get; set; }
+        public virtual ICollection<Experience> Experiences { get; set; }
         //public virtual ICollection<Person> People { get; set; }
     }
 }

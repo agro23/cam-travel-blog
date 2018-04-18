@@ -22,7 +22,7 @@ namespace TravelBlog.Controllers
 
         public IActionResult Create()
         {
-            ViewBag.Locations = new SelectList(db.Locations, "LocationId", "Place");
+            ViewBag.LocationId = new SelectList(db.Locations, "LocationId", "Place");
             ViewBag.People = new SelectList(db.People, "PersonId", "Name");
             return View();
         }
@@ -30,6 +30,7 @@ namespace TravelBlog.Controllers
         [HttpPost]
         public IActionResult Create(Experience experience)
         {
+            Console.WriteLine(experience.LocationId);
             db.Experiences.Add(experience);
             db.SaveChanges();
             return RedirectToAction("Index");
@@ -37,6 +38,9 @@ namespace TravelBlog.Controllers
 
         public IActionResult Edit(int id)
         {
+            ViewBag.LocationId = new SelectList(db.Locations, "LocationId", "Place");
+            ViewBag.People = new SelectList(db.People, "PersonId", "Name");
+
             var thisExperience = db.Experiences.FirstOrDefault(Experiences => Experiences.ExperienceId == id);
             return View(thisExperience);
         }
@@ -51,7 +55,7 @@ namespace TravelBlog.Controllers
 
         public IActionResult Details(int id)
         {
-            var thisExperience = db.Experiences.FirstOrDefault(Experiences => Experiences.ExperienceId == id);
+            var thisExperience = db.Experiences.Include(ExperiencesController => ExperiencesController.Location).FirstOrDefault(Experiences => Experiences.ExperienceId == id);
             return View(thisExperience);
         }
 
