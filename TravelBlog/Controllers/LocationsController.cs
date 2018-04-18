@@ -16,7 +16,21 @@ namespace TravelBlog.Controllers
         private TravelDbContext db = new TravelDbContext();
         public IActionResult Index()
         {
+            List<Location> model = db.Locations.ToList();
+            return View(model);
+        }
+
+        public IActionResult Create()
+        {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Location location)
+        {
+            db.Locations.Add(location);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

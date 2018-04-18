@@ -1,0 +1,22 @@
+﻿@model TravelBlog.Models.Location
+
+@{
+    ViewData["Title"] = "Location - Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create a new Division</h2>
+<hr />
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Place)<br />
+    @Html.EditorFor(model => model.Place)<br />
+    @Html.LabelFor(model => model.Details)<br />
+    @Html.EditorFor(model => model.Details)<br />
+
+    <input type="submit" value="Create" class="btn btn-default" />
+
+}
+
+@Html.ActionLink("Back to Locations", "Index")
