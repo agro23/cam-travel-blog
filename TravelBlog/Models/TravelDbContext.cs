@@ -12,8 +12,23 @@ namespace TravelBlog.Models
         public DbSet<Location> Locations { get; set; }
         public DbSet<Person> People { get; set; }
 
+        public TravelDbContext()
+        {
+        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            => optionsBuilder
-                .UseMySql(@"Server=localhost;Port=8889;database=todolist;uid=root;pwd=root;");
+        {
+            optionsBuilder.UseMySql(@"Server=localhost;Port=8889;database=travelBlog;uid=root;pwd=root;");
+        }
+
+        public TravelDbContext(DbContextOptions<TravelDbContext> options)
+            : base(options)
+        {
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

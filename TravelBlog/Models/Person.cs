@@ -13,7 +13,7 @@ namespace TravelBlog.Models
         [Key]
         public int PersonId { get; set; }
         public string Name { get; set; }
-        public ICollection<Experience> Experiences { get; set; }
-        public ICollection<Location> Locations { get; set; }
+        //public ICollection<Experience> Experiences { get; set; }
+        //public ICollection<Location> Locations { get; set; }
     }
 }
