@@ -1,0 +1,34 @@
+﻿@model IEnumerable<TravelBlog.Models.Person>
+
+@{
+    ViewData["Title"] = "People";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>People</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+         @foreach (var listPerson in Model)
+  
+        {
+           <tr>
+               <td> @Html.DisplayFor(modelDivision => listPerson.Name)</td>
+           
+               <td>
+                   @Html.ActionLink("Edit", "Edit", new { id = listPerson.PersonId }) |
+                   @Html.ActionLink("Delete", "Delete", new { id = listPerson.PersonId })
+               </td>
+           </tr>
+
+        }
+   
+ 
+</table>
+
+@Html.ActionLink("Add New Person", "Create")
