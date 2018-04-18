@@ -13,6 +13,7 @@
     <Folder Include="Controllers\" />
     <Folder Include="Views\Locations\" />
     <Folder Include="Views\People\" />
+    <Folder Include="Views\Experiences\" />
   </ItemGroup>
 
   <ItemGroup>
