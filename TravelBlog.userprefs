@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{F49D2744-64E6-41D2-9672-35ED8AB2F103}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBlog/Models/Person.cs">
+    <Files>
+      <File FileName="TravelBlog/appsettings.json" Line="3" Column="53" />
+      <File FileName="TravelBlog/Startup.cs" Line="31" Column="67" />
+      <File FileName="TravelBlog/TravelBlog.csproj" Line="1" Column="1" />
+      <File FileName="TravelBlog/Models/TravelDbContext.cs" Line="5" Column="37" />
+      <File FileName="TravelBlog/Models/Experience.cs" Line="1" Column="1" />
+      <File FileName="TravelBlog/Models/Location.cs" Line="1" Column="1" />
+      <File FileName="TravelBlog/Models/Person.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TravelBlog PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
