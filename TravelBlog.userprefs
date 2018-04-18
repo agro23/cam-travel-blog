@@ -1,18 +1,20 @@
 ﻿<Properties StartupConfiguration="{F49D2744-64E6-41D2-9672-35ED8AB2F103}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBlog/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBlog/Views/Locations/Index.cshtml">
     <Files>
       <File FileName="TravelBlog/appsettings.json" Line="4" Column="4" />
-      <File FileName="TravelBlog/Startup.cs" Line="38" Column="54" />
+      <File FileName="TravelBlog/Startup.cs" Line="68" Column="10" />
       <File FileName="TravelBlog/Models/TravelDbContext.cs" Line="17" Column="10" />
       <File FileName="TravelBlog/Models/Experience.cs" Line="23" Column="1" />
       <File FileName="TravelBlog/Models/Location.cs" Line="17" Column="67" />
       <File FileName="TravelBlog/Models/Person.cs" Line="16" Column="67" />
       <File FileName=".gitignore" Line="261" Column="6" />
-      <File FileName="TravelBlog/TravelBlog.csproj" Line="18" Column="76" />
-      <File FileName="TravelBlog/Views/Shared/_Layout.cshtml" Line="24" Column="105" />
-      <File FileName="TravelBlog/Views/Home/Index.cshtml" Line="9" Column="9" />
+      <File FileName="TravelBlog/TravelBlog.csproj" Line="1" Column="1" />
+      <File FileName="TravelBlog/Views/Shared/_Layout.cshtml" Line="38" Column="22" />
+      <File FileName="TravelBlog/Views/Home/Index.cshtml" Line="6" Column="5" />
       <File FileName="TravelBlog/Controllers/HomeController.cs" Line="17" Column="1" />
-      <File FileName="TravelBlog/Program.cs" Line="24" Column="2" />
+      <File FileName="TravelBlog/Program.cs" Line="19" Column="42" />
+      <File FileName="TravelBlog/Controllers/LocationsController.cs" Line="19" Column="42" />
+      <File FileName="TravelBlog/Views/Locations/Index.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
