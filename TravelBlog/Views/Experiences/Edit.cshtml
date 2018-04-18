@@ -18,6 +18,14 @@
     @Html.LabelFor(model => model.Content)
     @Html.EditorFor(model => model.Content)
 
+    @Html.LabelFor(model => model.LocationId)
+    @Html.DropDownList("LocationId")
+
+    @Html.LabelFor(model => model.PersonId)
+    @Html.DropDownList("PersonId")
+
+
+
     <input type="submit" value="Save" class="btn btn-default" />
 
 }

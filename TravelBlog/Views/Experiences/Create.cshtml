@@ -15,6 +15,12 @@
     @Html.LabelFor(model => model.Content)<br />
     @Html.EditorFor(model => model.Content)<br />
 
+    @Html.LabelFor(ViewBag => ViewBag.Locations)<br />
+    @Html.DropDownList("Locations")<br />
+
+    @Html.LabelFor(model => model.People)<br />
+    @Html.DropDownList("People")<br />
+
     <input type="submit" value="Create" class="btn btn-default" />
 
 }

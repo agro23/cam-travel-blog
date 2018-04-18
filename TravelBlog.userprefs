@@ -1,35 +1,10 @@
 ﻿<Properties StartupConfiguration="{F49D2744-64E6-41D2-9672-35ED8AB2F103}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBlog/Views/Experiences/Delete.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBlog/Views/Experiences/Create.cshtml">
     <Files>
-      <File FileName="TravelBlog/appsettings.json" Line="4" Column="4" />
-      <File FileName="TravelBlog/Startup.cs" Line="68" Column="10" />
-      <File FileName="TravelBlog/Models/TravelDbContext.cs" Line="17" Column="10" />
-      <File FileName="TravelBlog/Models/Location.cs" Line="17" Column="67" />
-      <File FileName="TravelBlog/Models/Person.cs" Line="20" Column="1" />
-      <File FileName=".gitignore" Line="261" Column="6" />
-      <File FileName="TravelBlog/Views/Home/Index.cshtml" Line="6" Column="5" />
-      <File FileName="TravelBlog/Controllers/HomeController.cs" Line="17" Column="1" />
-      <File FileName="TravelBlog/Program.cs" Line="19" Column="42" />
-      <File FileName="TravelBlog/Controllers/LocationsController.cs" Line="36" Column="9" />
-      <File FileName="TravelBlog/Views/Locations/Index.cshtml" Line="1" Column="1" />
+      <File FileName="TravelBlog/Views/Experiences/Create.cshtml" Line="19" Column="34" />
+      <File FileName="TravelBlog/Controllers/ExperiencesController.cs" Line="26" Column="63" />
+      <File FileName="TravelBlog/Models/Experience.cs" Line="16" Column="49" />
       <File FileName="TravelBlog/Views/Locations/Create.cshtml" Line="1" Column="1" />
-      <File FileName="TravelBlog/Views/Locations/Edit.cshtml" Line="1" Column="1" />
-      <File FileName="TravelBlog/Views/Locations/Details.cshtml" Line="1" Column="1" />
-      <File FileName="TravelBlog/Views/Locations/Delete.cshtml" Line="1" Column="1" />
-      <File FileName="TravelBlog/Controllers/PeopleController.cs" Line="63" Column="10" />
-      <File FileName="TravelBlog/Views/People/Index.cshtml" Line="24" Column="88" />
-      <File FileName="TravelBlog/Views/People/Create.cshtml" Line="16" Column="7" />
-      <File FileName="TravelBlog/Views/People/Edit.cshtml" Line="22" Column="44" />
-      <File FileName="TravelBlog/TravelBlog.csproj" Line="1" Column="1" />
-      <File FileName="TravelBlog/Views/People/Delete.cshtml" Line="17" Column="34" />
-      <File FileName="TravelBlog/Controllers/ExperiencesController.cs" Line="53" Column="41" />
-      <File FileName="TravelBlog/Views/Experiences/Index.cshtml" Line="4" Column="36" />
-      <File FileName="TravelBlog/Views/Experiences/Create.cshtml" Line="22" Column="38" />
-      <File FileName="TravelBlog/Views/Experiences/Edit.cshtml" Line="10" Column="64" />
-      <File FileName="TravelBlog/Views/Shared/_Layout.cshtml" Line="24" Column="19" />
-      <File FileName="TravelBlog/Models/Experience.cs" Line="23" Column="1" />
-      <File FileName="TravelBlog/Views/Experiences/Details.cshtml" Line="13" Column="108" />
-      <File FileName="TravelBlog/Views/Experiences/Delete.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

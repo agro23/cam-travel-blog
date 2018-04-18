@@ -24,14 +24,15 @@ namespace TravelBlog
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile("appsettings.json");
             Configuration = builder.Build();
+            ConnectionString = Configuration["ConnectionStrings:DefaultConnection"];
         }
-
+        public static string ConnectionString;
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddEntityFramework()
-                .AddDbContext<TravelDbContext>(options => options.UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
+                .AddDbContext<TravelDbContext>(options => options.UseMySql(ConnectionString));
             services.AddMvc();
         }
 
