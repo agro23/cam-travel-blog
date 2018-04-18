@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{F49D2744-64E6-41D2-9672-35ED8AB2F103}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBlog/Views/Shared/_Layout.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBlog/Views/Locations/Delete.cshtml">
     <Files>
       <File FileName="TravelBlog/appsettings.json" Line="4" Column="4" />
       <File FileName="TravelBlog/Startup.cs" Line="68" Column="10" />
@@ -9,7 +9,7 @@
       <File FileName="TravelBlog/Models/Person.cs" Line="16" Column="67" />
       <File FileName=".gitignore" Line="261" Column="6" />
       <File FileName="TravelBlog/TravelBlog.csproj" Line="1" Column="1" />
-      <File FileName="TravelBlog/Views/Shared/_Layout.cshtml" Line="40" Column="5" />
+      <File FileName="TravelBlog/Views/Shared/_Layout.cshtml" Line="24" Column="19" />
       <File FileName="TravelBlog/Views/Home/Index.cshtml" Line="6" Column="5" />
       <File FileName="TravelBlog/Controllers/HomeController.cs" Line="17" Column="1" />
       <File FileName="TravelBlog/Program.cs" Line="19" Column="42" />
@@ -18,6 +18,7 @@
       <File FileName="TravelBlog/Views/Locations/Create.cshtml" Line="16" Column="20" />
       <File FileName="TravelBlog/Views/Locations/Edit.cshtml" Line="19" Column="38" />
       <File FileName="TravelBlog/Views/Locations/Details.cshtml" Line="11" Column="47" />
+      <File FileName="TravelBlog/Views/Locations/Delete.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
