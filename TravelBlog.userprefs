@@ -1,10 +1,16 @@
 ﻿<Properties StartupConfiguration="{F49D2744-64E6-41D2-9672-35ED8AB2F103}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBlog/Views/Experiences/Create.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBlog/Views/Experiences/Details.cshtml">
     <Files>
-      <File FileName="TravelBlog/Views/Experiences/Create.cshtml" Line="19" Column="34" />
-      <File FileName="TravelBlog/Controllers/ExperiencesController.cs" Line="26" Column="63" />
-      <File FileName="TravelBlog/Models/Experience.cs" Line="16" Column="49" />
+      <File FileName="TravelBlog/Views/Experiences/Create.cshtml" Line="18" Column="35" />
+      <File FileName="TravelBlog/Controllers/ExperiencesController.cs" Line="41" Column="31" />
+      <File FileName="TravelBlog/Models/Experience.cs" Line="19" Column="55" />
       <File FileName="TravelBlog/Views/Locations/Create.cshtml" Line="1" Column="1" />
+      <File FileName="TravelBlog/Controllers/LocationsController.cs" Line="56" Column="9" />
+      <File FileName="TravelBlog/Controllers/PeopleController.cs" Line="63" Column="10" />
+      <File FileName="TravelBlog/Views/Experiences/Edit.cshtml" Line="21" Column="45" />
+      <File FileName="TravelBlog/Models/Location.cs" Line="17" Column="70" />
+      <File FileName="TravelBlog/Migrations/20180418231127_locationsHaveManyExperiences.Designer.cs" Line="1" Column="1" />
+      <File FileName="TravelBlog/Views/Experiences/Details.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
