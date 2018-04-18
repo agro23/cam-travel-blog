@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{F49D2744-64E6-41D2-9672-35ED8AB2F103}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBlog/Views/Locations/Create.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TravelBlog/Views/Locations/Edit.cshtml">
     <Files>
       <File FileName="TravelBlog/appsettings.json" Line="4" Column="4" />
       <File FileName="TravelBlog/Startup.cs" Line="68" Column="10" />
@@ -13,9 +13,10 @@
       <File FileName="TravelBlog/Views/Home/Index.cshtml" Line="6" Column="5" />
       <File FileName="TravelBlog/Controllers/HomeController.cs" Line="17" Column="1" />
       <File FileName="TravelBlog/Program.cs" Line="19" Column="42" />
-      <File FileName="TravelBlog/Controllers/LocationsController.cs" Line="19" Column="42" />
+      <File FileName="TravelBlog/Controllers/LocationsController.cs" Line="31" Column="35" />
       <File FileName="TravelBlog/Views/Locations/Index.cshtml" Line="37" Column="38" />
-      <File FileName="TravelBlog/Views/Locations/Create.cshtml" Line="1" Column="1" />
+      <File FileName="TravelBlog/Views/Locations/Create.cshtml" Line="16" Column="20" />
+      <File FileName="TravelBlog/Views/Locations/Edit.cshtml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
