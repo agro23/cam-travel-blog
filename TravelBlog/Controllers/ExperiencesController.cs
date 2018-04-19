@@ -37,6 +37,10 @@ namespace TravelBlog.Controllers
             var thisPersonId = Int32.Parse(Request.Form["PersonId"]);
             var thisPerson = db.People.FirstOrDefault(People => People.PersonId == thisPersonId);
             thisPerson.ExperienceId = experience.ExperienceId;
+            var thisExperiencePeople = new ExperiencePeople{};
+            thisExperiencePeople.ExperienceId = experience.ExperienceId;
+            thisExperiencePeople.PersonId = thisPerson.PersonId;
+            db.ExperiencePeople.Add(thisExperiencePeople);
  
             db.Entry(thisPerson).State = EntityState.Modified;
             db.SaveChanges();

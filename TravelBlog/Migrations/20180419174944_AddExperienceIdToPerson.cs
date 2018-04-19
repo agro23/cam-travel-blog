@@ -30,23 +30,27 @@ namespace TravelBlog.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropForeignKey(
-                name: "FK_People_Experiences_ExperienceId",
-                table: "People");
+            migrationBuilder.AddForeignKey(
+               name: "FK_People_Experiences_ExperienceId",
+               table: "People",
+               column: "ExperienceId",
+               principalTable: "Experiences",
+               principalColumn: "ExperienceId",
+               onDelete: ReferentialAction.Restrict);
 
             migrationBuilder.AlterColumn<int>(
                 name: "ExperienceId",
                 table: "People",
                 nullable: true,
                 oldClrType: typeof(int));
-
-            migrationBuilder.AddForeignKey(
+            
+            migrationBuilder.DropForeignKey(
                 name: "FK_People_Experiences_ExperienceId",
-                table: "People",
-                column: "ExperienceId",
-                principalTable: "Experiences",
-                principalColumn: "ExperienceId",
-                onDelete: ReferentialAction.Restrict);
+                table: "People");
+
+
+
+           
         }
     }
 }

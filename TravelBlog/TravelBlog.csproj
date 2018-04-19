@@ -34,4 +34,12 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Migrations\20180419182744_MakeExperiencePeople.Designer.cs" />
+    <Compile Remove="Migrations\20180419182744_MakeExperiencePeople.cs" />
+    <Compile Remove="Migrations\20180419183058_MakeExperiencePeople.Designer.cs" />
+    <Compile Remove="Migrations\20180419183058_MakeExperiencePeople.cs" />
+    <Compile Remove="Migrations\20180419174944_AddExperienceIdToPerson.Designer.cs" />
+    <Compile Remove="Migrations\20180419174944_AddExperienceIdToPerson.cs" />
+  </ItemGroup>
 </Project>

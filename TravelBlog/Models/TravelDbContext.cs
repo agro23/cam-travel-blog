@@ -11,6 +11,7 @@ namespace TravelBlog.Models
         public DbSet<Experience> Experiences { get; set; }
         public DbSet<Location> Locations { get; set; }
         public DbSet<Person> People { get; set; }
+        public DbSet<ExperiencePeople> ExperiencePeople { get; set; }
 
         public TravelDbContext()
         {
@@ -29,6 +30,7 @@ namespace TravelBlog.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+         
         }
     }
 }
