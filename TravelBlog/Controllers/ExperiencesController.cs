@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TravelBlog.Models;
+using TravelBlog.ViewModels;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -31,7 +32,7 @@ namespace TravelBlog.Controllers
         [HttpPost]
         public IActionResult Create(Experience experience)
         {
-            Console.WriteLine(experience.LocationId);
+           
             db.Experiences.Add(experience);
 
             var thisPersonId = Int32.Parse(Request.Form["PersonId"]);
@@ -59,6 +60,14 @@ namespace TravelBlog.Controllers
         [HttpPost]
         public IActionResult Edit(Experience experience)
         {
+            var thisPersonId = Int32.Parse(Request.Form["People"]);
+            var thisPerson = db.People.FirstOrDefault(People => People.PersonId == thisPersonId);
+            thisPerson.ExperienceId = experience.ExperienceId;
+            var thisExperiencePeople = new ExperiencePeople { };
+            thisExperiencePeople.ExperienceId = experience.ExperienceId;
+            thisExperiencePeople.PersonId = thisPerson.PersonId;
+            db.ExperiencePeople.Add(thisExperiencePeople);
+
             db.Entry(experience).State = EntityState.Modified;
             db.SaveChanges();
             return RedirectToAction("Index");
@@ -67,6 +76,10 @@ namespace TravelBlog.Controllers
         public IActionResult Details(int id)
         {
             var thisExperience = db.Experiences.Include(ExperiencesController => ExperiencesController.Location).FirstOrDefault(Experiences => Experiences.ExperienceId == id);
+            //ViewBag.PeopleHere = new SelectList(db.ExperiencePeople, "ExperiencePeopleId", "???")
+            var viewModel = new ExperiencePeopleData();
+            //viewModel.People = db.ExperiencePeople
+                //.Include("People").Where(p => p.ExperiencePeople == thisExperience.ExperienceId).ToList();
             return View(thisExperience);
         }
 

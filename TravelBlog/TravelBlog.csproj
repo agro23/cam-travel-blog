@@ -14,6 +14,7 @@
     <Folder Include="Views\Locations\" />
     <Folder Include="Views\People\" />
     <Folder Include="Views\Experiences\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 
   <ItemGroup>

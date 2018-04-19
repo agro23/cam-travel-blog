@@ -11,4 +11,10 @@
 <p>@Html.DisplayNameFor(model => model.Content) : @Html.DisplayFor(model => model.Content)</p>
 <p>@Html.DisplayNameFor(model => model.Location.Place) : @Html.DisplayFor(model => model.Location.Place)</p>
 
+<ul>
+@for(var i=0; i < something.Count; i++){
+    <li>This is a person that had that experience</li>
+}
+</ul>>
+
 <p>@Html.ActionLink("Edit", "Edit", new { id = Model.ExperienceId }) | @Html.ActionLink("Back to Experiences", "Index")</p>
